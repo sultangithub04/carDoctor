@@ -40,7 +40,7 @@ const BookingUpdateForm = ({ data }) => {
 
     console.log(bookingPayload);
     const res = await fetch(
-      `${process.env.NEXTAUTH_URL}/api/my-bookings/${data._id}`,
+      `${process.env.NEXT_PUBLIC_NEXTAUTH_URL}/api/my-bookings/${data._id}`,
       {
         method: "PATCH",
         body: JSON.stringify(bookingPayload),

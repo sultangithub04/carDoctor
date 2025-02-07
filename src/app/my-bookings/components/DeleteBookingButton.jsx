@@ -6,7 +6,7 @@ export default function DeleteBookingButton({ id }) {
   const router = useRouter();
   const handleDelete = async (id) => {
     const res = await fetch(
-      `${process.env.NEXTAUTH_URL}/api/service/${id}`,
+      `${process.env.NEXT_PUBLIC_NEXTAUTH_URL}/api/service/${id}`,
       {
         method: "DELETE",
       }
